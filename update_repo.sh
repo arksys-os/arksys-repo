@@ -2,6 +2,7 @@
 
 cd ./x86_64/
 
+# create file if not exists
 touch -c arksys-repo.db.tar.gz
 
 # add all packages with ".pkg.tar.zst" extension in that path to the database
