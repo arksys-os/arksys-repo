@@ -6,12 +6,16 @@ cd ./x86_64/
 repo-add arksys-repo.db.tar.zst *.pkg.tar.zst
 
 # remove symlinks for local repository
-#rm arksys-repo.db
-#rm arksys-repo.files
+rm arksys-repo.db
+rm arksys-repo.files
 
 # rename files without ".tar.gz" because the symlinks do not exist
-#mv arksys-repo.db.tar.gz arksys-repo.db
-#mv arksys-repo.files.tar.gz arksys-repo.files
+mv arksys-repo.db.tar.gz arksys-repo.db
+mv arksys-repo.files.tar.gz arksys-repo.files
+
+# remove old files
+rm arksys-repo.db.tar.zst.old
+rm arksys-repo.files.tar.zst.old
 
 echo "####################################"
 echo "      ArkSys x86 Repo Updated!!     "
